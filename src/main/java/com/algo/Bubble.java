@@ -1,11 +1,13 @@
 package com.algo;
 
+import java.util.Arrays;
+
 public class Bubble {
-    private int[] arr;
+    private Integer[] arr;
     private int element;
 
     public Bubble(final int SIZE) {
-        arr = new int[SIZE];
+        arr = new Integer[SIZE];
         element = 0;
     }
 
@@ -32,5 +34,9 @@ public class Bubble {
                 if(arr[j] > arr[j + 1]) toSwap(j, j + 1);
             }
         }
+    }
+
+    public Integer[] printArray() {
+        return arr;
     }
 }
